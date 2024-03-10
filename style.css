@@ -489,10 +489,11 @@ input[type=radio]:checked + label {
   .venue-box {
     display: block;
     align-items: center;
+    justify-content: center;
   }
 
   .venue-box .venue-address {
-    width: 100%;
+    width: 60%;
   }
 
   .venue-box .map {
