@@ -332,7 +332,7 @@ main p {
 	box-sizing: border-box;
 	width: 100%;
 	letter-spacing: 1px;
-	padding-left: 4em;
+	padding-left: 5em;
 }
 .cp_iptxt input[type='text']:focus, .cp_iptxt input[type='tel']:focus, .cp_iptxt input[type='email']:focus {
 	outline: none;
@@ -673,6 +673,22 @@ input[type=radio]:checked + label {
   .form-attendance label {
     width: 50%;
     font-size: 200%;
+  }
+
+  .cp_iptxt input[type='text'], .cp_iptxt input[type='tel'], .cp_iptxt input[type='email'] {
+    /* font: 15px/24px sans-serif; */
+    font-size: 120%;
+    padding-left: 0;
+  }
+  .cp_iptxt label {
+    font-size: 120%;
+  }
+  .ef:focus ~ label, .cp_iptxt.ef ~ label, .ef:not(:placeholder-shown) ~ label {
+    /* font-size: 12px; */
+    font-size: 100%;
+    top: -16px;
+    transition: 0.3s;
+    color: #da3c41;
   }
 
   /* Background */
